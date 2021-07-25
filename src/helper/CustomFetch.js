@@ -1,13 +1,13 @@
 import axios from "axios";
 import { errorToastify } from "../common/react_toastify/toastify";
+import { AuthAxios } from "./CustomAxios";
 
 import { switchData } from "./switchData";
 
 export const fetchRequest = async ({ url, storage, dispatch }) => {
-  await axios
-    .get(url, {
-      "Content-Type": "application/json",
-    })
+  await AuthAxios.get(url, {
+    "Content-Type": "application/json",
+  })
     .then((res) => {
       res.data && switchData({ storage, dispatch, payload: res.data });
     })
