@@ -1,3 +1,14 @@
+# Game_List_application
+
+This is an application that displays a list of games. Games image, title and description are the properties that was rendered on the browser. Games can be filtered by the game topic, group and level.
+
+# Tools used
+
+*useReducer
+*react-toastify
+*axios
+*Hooks
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
