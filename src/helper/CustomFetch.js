@@ -9,6 +9,7 @@ export const fetchRequest = async ({ url, storage, dispatch }) => {
       "Content-Type": "application/json",
     })
     .then((res) => {
+      console.log(`res.data`, res.data);
       res.data && switchData({ storage, dispatch, payload: res.data });
     })
     .catch((err) => {
